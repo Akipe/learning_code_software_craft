@@ -4,8 +4,8 @@ namespace Akipe\ExampleFizzBuzz;
 
 class FizzBuzz
 {
-  public function print(int $number): int
+  public function print(int $number): string
   {
-    throw new \Exception();
+    return (string) $number;
   }
 }

@@ -11,6 +11,6 @@ final class FizzBuzzTest extends TestCase
 
     $number = 1;
     $value = $fizzBuzz->print($number);
-    $this->assertSame($number, $value);
+    $this->assertSame((string) $number, $value);
   }
 }
