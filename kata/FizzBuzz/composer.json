@@ -1,0 +1,23 @@
+{
+  "name": "akipe/example_fizz_buzz",
+  "description": "Learning project for practice TDD",
+  "type": "project",
+  "require-dev": {
+    "phpunit/phpunit": "^10.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Akipe\\ExampleFizzBuzz\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Julien Milletre Akipe",
+      "email": "code.julien@milletre.fr"
+    }
+  ],
+  "require": {},
+  "scripts": {
+    "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests"
+  }
+}
