@@ -9,10 +9,20 @@ final class FizzBuzzTest extends TestCase
   {
     $fizzBuzz = new FizzBuzz();
 
-    $number = 1;
-    $value = $fizzBuzz->print($number);
+    $numbersCheck = [
+      1,
+      2,
+      4,
+      7,
+    ];
 
-    $this->assertSame((string) $number, $value);
+    $resultNumbers = [];
+
+    foreach($numbersCheck as $multipleThree) {
+      $resultNumbers[] = $fizzBuzz->print($multipleThree);
+    }
+
+    $this->assertEquals($numbersCheck, $resultNumbers);
   }
 
   public function test_should_return_fizz_when_number_is_multiple_of_three(): void
@@ -60,9 +70,19 @@ final class FizzBuzzTest extends TestCase
   {
     $fizzBuzz = new FizzBuzz();
 
-    $value = 15;
-    $resultExpected = FizzBuzz::FIZZ . FizzBuzz::BUZZ;
+    $multiplesFifteen = [
+      15,
+      30,
+      45,
+      60,
+    ];
+    $resultExpected = \array_fill(0, 4, FizzBuzz::FIZZ . FizzBuzz::BUZZ);
+    $resultMultiplesFifteen = [];
 
-    $this->assertSame($resultExpected, $fizzBuzz->print($value));
+    foreach($multiplesFifteen as $multipleFifteen) {
+      $resultMultiplesFifteen[] = $fizzBuzz->print($multipleFifteen);
+    }
+
+    $this->assertEquals($resultExpected, $resultMultiplesFifteen);
   }
 }
