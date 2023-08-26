@@ -61,7 +61,7 @@ final class FizzBuzzTest extends TestCase
     $fizzBuzz = new FizzBuzz();
 
     $value = 15;
-    $resultExpected = "fizzbuzz";
+    $resultExpected = FizzBuzz::FIZZ . FizzBuzz::BUZZ;
 
     $this->assertSame($resultExpected, $fizzBuzz->print($value));
   }
