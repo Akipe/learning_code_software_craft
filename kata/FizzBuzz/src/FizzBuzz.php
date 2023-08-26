@@ -12,6 +12,10 @@ class FizzBuzz
       return self::FIZZ;
     }
 
+    if ($number % 5 === 0) {
+      return "buzz";
+    }
+
     return (string) $number;
   }
 }
