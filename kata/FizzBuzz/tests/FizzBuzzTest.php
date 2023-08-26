@@ -11,6 +11,7 @@ final class FizzBuzzTest extends TestCase
 
     $number = 1;
     $value = $fizzBuzz->print($number);
+
     $this->assertSame((string) $number, $value);
   }
 
@@ -24,7 +25,7 @@ final class FizzBuzzTest extends TestCase
       9,
       12,
     ];
-    $resultExpected = \array_fill(0, 4, "fizz");
+    $resultExpected = \array_fill(0, 4, FizzBuzz::FIZZ);
 
     $resultMultiplesThree = [];
 
