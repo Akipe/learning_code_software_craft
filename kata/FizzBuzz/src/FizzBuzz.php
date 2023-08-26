@@ -5,6 +5,7 @@ namespace Akipe\ExampleFizzBuzz;
 class FizzBuzz
 {
   const FIZZ = "fizz";
+  const BUZZ = "buzz";
 
   public function print(int $number): string
   {
@@ -13,7 +14,7 @@ class FizzBuzz
     }
 
     if ($number % 5 === 0) {
-      return "buzz";
+      return self::BUZZ;
     }
 
     return (string) $number;

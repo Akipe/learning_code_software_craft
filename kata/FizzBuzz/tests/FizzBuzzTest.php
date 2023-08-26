@@ -46,7 +46,7 @@ final class FizzBuzzTest extends TestCase
       20,
       25,
     ];
-    $resultExpected = \array_fill(0, 4, "buzz");
+    $resultExpected = \array_fill(0, 4, FizzBuzz::BUZZ);
     $resultMultiplesFive = [];
 
     foreach($multiplesFive as $multipleFive) {
