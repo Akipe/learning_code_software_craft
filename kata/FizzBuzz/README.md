@@ -1,5 +1,4 @@
-Kata FizzBuzz
-===
+# Kata FizzBuzz
 
 Kata très simple implémentant l'algorithme FizzBuzz en appliquant les principes TDD.
 
