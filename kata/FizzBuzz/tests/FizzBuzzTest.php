@@ -55,4 +55,14 @@ final class FizzBuzzTest extends TestCase
 
     $this->assertEquals($resultExpected, $resultMultiplesFive);
   }
+
+  public function test_should_return_fizzbuzz_when_number_is_multiple_of_three_and_five(): void
+  {
+    $fizzBuzz = new FizzBuzz();
+
+    $value = 15;
+    $resultExpected = "fizzbuzz";
+
+    $this->assertSame($resultExpected, $fizzBuzz->print($value));
+  }
 }
