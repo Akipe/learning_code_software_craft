@@ -12,8 +12,8 @@ use Behat\Behat\Tester\Exception\PendingException;
 */
 class BasketContext implements Context
 {
-  private $shelf;
-  private $basket;
+  private Shelf $shelf;
+  private Basket $basket;
 
   /**
   * Initializes context.
@@ -31,11 +31,11 @@ class BasketContext implements Context
   /**
   * @Given there is a :product, which costs €:price
   *
-  * @param mixed $product
-  * @param mixed $price
+  * @param string $product
+  * @param float $price
   * @return void
   */
-  public function thereIsAWhichCostsPs($product, $price)
+  public function thereIsAWhichCostsPs(string $product, float $price): void
   {
     $this->shelf->setProductPrice($product, \floatval($price));
   }
@@ -44,11 +44,10 @@ class BasketContext implements Context
   *
   * @When I add the :product to the basket
   *
-  * @param mixed $product
-  * @return never
-  * @throws PendingException
+  * @param string $product
+  * @return void
   */
-  public function iAddTheToTheBasket($product)
+  public function iAddTheToTheBasket(string $product): void
   {
     $this->basket->addProduct($product);
   }
@@ -57,11 +56,10 @@ class BasketContext implements Context
   *
   * @Then I should have :count product(s) in the basket
   *
-  * @param mixed $count
-  * @return never
-  * @throws PendingException
+  * @param int $count
+  * @return void
   */
-  public function iShouldHaveProductInTheBasket($count)
+  public function iShouldHaveProductInTheBasket(int $count): void
   {
     PHPUnit\Framework\Assert::assertCount(
       intval($count),
@@ -73,11 +71,10 @@ class BasketContext implements Context
   *
   * @Then the overall basket price should be €:price
   *
-  * @param mixed $price
-  * @return never
-  * @throws PendingException
+  * @param float $price
+  * @return void
   */
-  public function theOverallBasketPriceShouldBe($price)
+  public function theOverallBasketPriceShouldBe(float $price): void
   {
     PHPUnit\Framework\Assert::assertSame(
       floatval($price),

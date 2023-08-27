@@ -4,14 +4,20 @@ namespace Akipe\LearningCodeSoftwareCraft\BDD\QuickStartBehat;
 
 final class Shelf
 {
-  private $priceMap = [];
+  /** @var array<string,int> */
+  private array $priceMap;
 
-  public function setProductPrice($product, $price)
+  public function __construct()
+  {
+    $this->priceMap = [];
+  }
+
+  public function setProductPrice(string $product, float $price): void
   {
     $this->priceMap[$product] = $price;
   }
 
-  public function getProductPrice($product)
+  public function getProductPrice(string $product): float
   {
     return $this->priceMap[$product];
   }
