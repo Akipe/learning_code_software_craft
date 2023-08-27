@@ -1,4 +1,19 @@
 grumphp:
   tasks:
-    phpcs:
-      standard: PSR12
+    # phpcs:
+      # standard: PSR12
+    # phpstan:
+    #   level: 5
+    # phpunit:
+    #   always_execute: true
+    securitychecker_enlightn:
+      run_always: true
+    behat:
+      config: ./behat.yml
+      stop_on_failure: false
+    composer:
+      file: ./composer.json
+    # composer_normalize:
+    # composer_require_checker:
+    # gherkin:
+    #   directory: 'features'

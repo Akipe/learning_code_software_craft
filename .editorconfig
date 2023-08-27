@@ -12,6 +12,12 @@ max_line_length = 80
 [*.php]
 indent_size = 4
 
+[*.json]
+indent_size = 4
+
+[*.lock]
+indent_size = 4
+
 # Match shfmt
 [*.sh]
 indent_style = tab

@@ -2,31 +2,39 @@
     "name": "akipe/learning_code_software_craft",
     "description": "Several projects for learning Software Craft",
     "type": "project",
-    "require-dev": {
-        "phpunit/phpunit": "^10.3",
-        "behat/behat": "^3.13",
-        "phpro/grumphp-shim": "^2.0",
-        "squizlabs/php_codesniffer": "^3.7"
-    },
-    "autoload": {
-        "psr-4": {
-            "Akipe\\LearningCodeSoftwareCraft\\": "src/"
-        },
-        "classmap": ["features"]
-    },
     "authors": [
         {
             "name": "Julien Milletre Akipe",
             "email": "code.julien@milletre.fr"
         }
     ],
-    "scripts": {
-      "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests",
-      "test-bdd": "./vendor/bin/behat"
+    "require-dev": {
+        "behat/behat": "^3.13",
+        "enlightn/security-checker": "^1.10",
+        "ergebnis/composer-normalize": "^2.35",
+        "maglnet/composer-require-checker": "^4.6",
+        "phpro/grumphp-shim": "^2.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.3",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akipe\\LearningCodeSoftwareCraft\\": "src/"
+        },
+        "classmap": [
+            "features"
+        ]
     },
     "config": {
         "allow-plugins": {
-            "phpro/grumphp-shim": true
+            "phpro/grumphp-shim": true,
+            "ergebnis/composer-normalize": true
         }
+    },
+    "license": "MIT",
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests",
+        "test-bdd": "./vendor/bin/behat"
     }
 }
