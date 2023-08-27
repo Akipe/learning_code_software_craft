@@ -3,12 +3,14 @@
     "description": "Several projects for learning Software Craft",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^10.3"
+        "phpunit/phpunit": "^10.3",
+        "behat/behat": "^3.13"
     },
     "autoload": {
         "psr-4": {
             "Akipe\\LearningCodeSoftwareCraft\\": "src/"
-        }
+        },
+        "classmap": ["features"]
     },
     "authors": [
         {
@@ -16,8 +18,8 @@
             "email": "code.julien@milletre.fr"
         }
     ],
-    "require": {},
     "scripts": {
-      "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests"
+      "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests",
+      "test-bdd": "./vendor/bin/behat"
     }
 }
