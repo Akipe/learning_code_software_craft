@@ -2,7 +2,7 @@
 
 namespace Akipe\ExampleFormeMultiple\Graphique\Simple;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\IGraphique;
+use Akipe\Learning\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\IGraphique;
 
 class Point implements IGraphique
 {

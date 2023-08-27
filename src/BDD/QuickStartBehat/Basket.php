@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\BDD\QuickStartBehat;
+namespace Akipe\Learning\BDD\QuickStartBehat;
 
 final class Basket implements \Countable
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Carre;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Cercle;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Carre;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Cercle;
 
 class ExportateurFormeJSON implements IExportateurForme
 {

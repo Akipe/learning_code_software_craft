@@ -1,4 +1,7 @@
 default:
   suites:
     default:
-      contexts: [BasketContext]
+      paths:
+        - '%paths.base%/features'
+      contexts:
+        - 'Akipe\LearningSpecTest\QuickStartBehat\BasketContext'

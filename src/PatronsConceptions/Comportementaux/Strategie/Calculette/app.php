@@ -1,10 +1,10 @@
 <?php
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Calculator;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Addition;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Division;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Subtraction;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Multiplication;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Calculator;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Addition;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Division;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Subtraction;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Multiplication;
 
 require __DIR__ . '/../vendor/autoload.php';
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation;
 
 class Calculator
 {

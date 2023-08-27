@@ -3,4 +3,4 @@ composer.phar
 /vendor/
 vendor/
 # phpunit
-.cache
+*.cache

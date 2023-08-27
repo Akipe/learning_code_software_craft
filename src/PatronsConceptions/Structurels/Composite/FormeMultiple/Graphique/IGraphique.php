@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique;
+namespace Akipe\Learning\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique;
 
 interface IGraphique
 {

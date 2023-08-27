@@ -1,9 +1,9 @@
 <?php
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\StatsDisplay;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Subject\WeatherSensor;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ForecastDisplay;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ConditionsDisplay;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\StatsDisplay;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Subject\WeatherSensor;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ForecastDisplay;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ConditionsDisplay;
 
 require __DIR__ . '/../vendor/autoload.php';
 

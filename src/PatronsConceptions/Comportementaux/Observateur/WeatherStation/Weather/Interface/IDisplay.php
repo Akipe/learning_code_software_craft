@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface;
 
 interface IDisplay
 {

@@ -20,11 +20,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Akipe\\LearningCodeSoftwareCraft\\": "src/"
-        },
-        "classmap": [
-            "features"
-        ]
+            "Akipe\\Learning\\": "src/",
+            "Akipe\\LearningUnitTest\\": "tests/unit",
+            "Akipe\\LearningSpecTest\\": "tests/specification"
+        }
     },
     "config": {
         "allow-plugins": {
@@ -34,7 +33,7 @@
     },
     "license": "MIT",
     "scripts": {
-        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests",
+        "test": "./vendor/bin/phpunit tests",
         "test-bdd": "./vendor/bin/behat"
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IDisplay;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherObserver;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IDisplay;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherObserver;
 
 class StatsDisplay implements IWeatherObserver, IDisplay
 {

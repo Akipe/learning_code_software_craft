@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme;
 
 class Point
 {

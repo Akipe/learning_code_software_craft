@@ -1,8 +1,8 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\Compose;
+namespace Akipe\Learning\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\Compose;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\IGraphique;
+use Akipe\Learning\PatronsConceptions\Structurels\Composite\FormeMultiple\Graphique\IGraphique;
 
 class ComposeForme implements IGraphique
 {

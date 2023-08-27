@@ -1,10 +1,10 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Subject;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Subject;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Number\RandomGenerator;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherSubject;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherObserver;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Number\RandomGenerator;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherSubject;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Interface\IWeatherObserver;
 
 class WeatherSensor implements IWeatherSubject
 {

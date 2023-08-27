@@ -1,8 +1,8 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Calcul;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Calcul;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
 
 class Trigonometrie
 {

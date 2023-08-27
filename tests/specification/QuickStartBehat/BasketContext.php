@@ -1,11 +1,14 @@
 <?php
 
-use Akipe\LearningCodeSoftwareCraft\BDD\QuickStartBehat\Basket;
-use Akipe\LearningCodeSoftwareCraft\BDD\QuickStartBehat\Shelf;
+namespace Akipe\LearningSpecTest\QuickStartBehat;
+
+use PHPUnit\Framework\Assert;
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\TableNode;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Behat\Tester\Exception\PendingException;
+use Akipe\Learning\BDD\QuickStartBehat\Shelf;
+use Akipe\Learning\BDD\QuickStartBehat\Basket;
 
 /**
 * Defines application features from the specific context.
@@ -61,7 +64,7 @@ class BasketContext implements Context
     */
     public function iShouldHaveProductInTheBasket(int $count): void
     {
-        PHPUnit\Framework\Assert::assertCount(
+        Assert::assertCount(
             intval($count),
             $this->basket
         );
@@ -76,7 +79,7 @@ class BasketContext implements Context
     */
     public function theOverallBasketPriceShouldBe(float $price): void
     {
-        PHPUnit\Framework\Assert::assertSame(
+        Assert::assertSame(
             floatval($price),
             $this->basket->getTotalPrice()
         );

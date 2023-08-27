@@ -1,10 +1,10 @@
 <?php
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Carre;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Cercle;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeXML;
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeJSON;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Carre;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Point;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme\Cercle;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeXML;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeJSON;
 
 require __DIR__ . '/../vendor/autoload.php';
 

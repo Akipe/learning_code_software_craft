@@ -1,8 +1,8 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\ICalculation;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\ICalculation;
 
 class Multiplication extends BaseMethod implements ICalculation
 {

@@ -1,7 +1,9 @@
 <?php
 
+namespace Akipe\LearningUnitTest\TDD\FizzBuzz;
+
 use PHPUnit\Framework\TestCase;
-use Akipe\LearningCodeSoftwareCraft\TDD\FizzBuzz\FizzBuzz;
+use Akipe\Learning\TDD\FizzBuzz\FizzBuzz;
 
 final class FizzBuzzTest extends TestCase
 {

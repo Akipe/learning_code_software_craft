@@ -1,8 +1,8 @@
 <?php
 
-namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme;
+namespace Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Forme;
 
-use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Calcul\Trigonometrie;
+use Akipe\Learning\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Calcul\Trigonometrie;
 
 class Cercle
 {
