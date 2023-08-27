@@ -4,5 +4,5 @@ namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Obs
 
 interface IDisplay
 {
-  public function display(): void;
+    public function display(): void;
 }

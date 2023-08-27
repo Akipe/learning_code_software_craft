@@ -38,6 +38,3 @@ Un seul joueur doit pouvoir occupé une case.
 **Alors** le joueur 2 doit recevoir une erreur
 
 **Et** il ne devrait pas pouvoir prendre la case 3
-
-
-

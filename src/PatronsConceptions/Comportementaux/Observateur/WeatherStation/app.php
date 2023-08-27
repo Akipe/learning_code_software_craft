@@ -5,7 +5,7 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observate
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ForecastDisplay;
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observateur\WeatherStation\Weather\Observer\ConditionsDisplay;
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $weatherSensor = new WeatherSensor();
 
@@ -20,7 +20,7 @@ $weatherSensor->subscribeWeatherObserver($statsDisplay);
 const SECOND_TOTAL_WAIT = 10;
 const SECOND_ITERATION_WAIT = 2;
 
-for($seconds = 0; $seconds < SECOND_TOTAL_WAIT; $seconds+=2) {
-  $weatherSensor->updateMeasure();
-  sleep(SECOND_ITERATION_WAIT);
+for ($seconds = 0; $seconds < SECOND_TOTAL_WAIT; $seconds += 2) {
+    $weatherSensor->updateMeasure();
+    sleep(SECOND_ITERATION_WAIT);
 }

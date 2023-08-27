@@ -8,29 +8,29 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Observate
 
 class ForecastDisplay implements IWeatherObserver, IDisplay
 {
-  private float $temperature;
-  private float $humidity;
-  private float $pression;
+    private float $temperature;
+    private float $humidity;
+    private float $pression;
 
-  public function refreshWeatherSubject($temperature, $humidity, $pression): void
-  {
-    $this->temperature = $temperature;
-    $this->humidity = $humidity;
-    $this->pression = $pression;
+    public function refreshWeatherSubject($temperature, $humidity, $pression): void
+    {
+        $this->temperature = $temperature;
+        $this->humidity = $humidity;
+        $this->pression = $pression;
 
-    $this->display();
-  }
+        $this->display();
+    }
 
-  public function display(): void
-  {
-    echo "Forecast weather :
+    public function display(): void
+    {
+        echo "Forecast weather :
       temperature next hour -> {$this->forecastWeather($this->temperature)}
       humidity next hour -> {$this->forecastWeather($this->humidity)}
-      pression next hour -> {$this->forecastWeather($this->pression)}". PHP_EOL;
-  }
+      pression next hour -> {$this->forecastWeather($this->pression)}" . PHP_EOL;
+    }
 
-  private function forecastWeather(float $stat): float
-  {
-    return RandomGenerator::increaseOrDecreaseBetweenZeroOne($stat);
-  }
+    private function forecastWeather(float $stat): float
+    {
+        return RandomGenerator::increaseOrDecreaseBetweenZeroOne($stat);
+    }
 }

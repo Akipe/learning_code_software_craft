@@ -4,6 +4,6 @@ namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Str
 
 interface ICalculation
 {
-  public function calculTwoNumbers(float $x, float $y): float;
-  public function getOperation(): string;
+    public function calculTwoNumbers(float $x, float $y): float;
+    public function getOperation(): string;
 }

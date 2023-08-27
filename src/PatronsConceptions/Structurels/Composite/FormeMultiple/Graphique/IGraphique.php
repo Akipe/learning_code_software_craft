@@ -4,7 +4,7 @@ namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Structurels\Composi
 
 interface IGraphique
 {
-  public function dessiner();
-  public function deplacer(int $x, int $y);
-  public function effacer();
+    public function dessiner();
+    public function deplacer(int $x, int $y);
+    public function effacer();
 }

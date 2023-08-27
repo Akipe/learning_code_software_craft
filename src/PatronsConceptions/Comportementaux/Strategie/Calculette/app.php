@@ -6,7 +6,7 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Subtraction;
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie\Calculette\Calculation\Method\Multiplication;
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $addition = new Addition();
 $subtraction = new Subtraction();
@@ -27,4 +27,4 @@ $calculator
   ->setCalculation($division)
   ->appendCalculation(10);
 
-echo "{$calculator->getOperation()} : {$calculator->getResult()}". PHP_EOL;
+echo "{$calculator->getOperation()} : {$calculator->getResult()}" . PHP_EOL;

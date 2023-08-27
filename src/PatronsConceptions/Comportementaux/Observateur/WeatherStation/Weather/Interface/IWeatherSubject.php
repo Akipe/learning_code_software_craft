@@ -4,7 +4,7 @@ namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Obs
 
 interface IWeatherSubject
 {
-  public function subscribeWeatherObserver(IWeatherObserver $observer): void;
-  public function unsubscribeWeatherObserver(IWeatherObserver $observer): void;
-  public function notifyWeatherObserver(): void;
+    public function subscribeWeatherObserver(IWeatherObserver $observer): void;
+    public function unsubscribeWeatherObserver(IWeatherObserver $observer): void;
+    public function notifyWeatherObserver(): void;
 }

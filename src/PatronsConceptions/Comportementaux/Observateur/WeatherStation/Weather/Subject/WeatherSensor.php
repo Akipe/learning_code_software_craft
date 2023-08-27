@@ -11,76 +11,76 @@ class WeatherSensor implements IWeatherSubject
   /**
    * @var IWeatherObserver[]
    */
-  private array $observers;
-  private float $temperature;
-  private float $humidity;
-  private float $pressure;
+    private array $observers;
+    private float $temperature;
+    private float $humidity;
+    private float $pressure;
 
-  public function __construct()
-  {
-    $this->observers = [];
+    public function __construct()
+    {
+        $this->observers = [];
 
-    // On génère des nombres aléatoire pour simuler les capteurs
-    $this->temperature = RandomGenerator::getBetweenZeroOne() * 10;
-    $this->humidity = RandomGenerator::getBetweenZeroOne() * 10;
-    $this->pressure = RandomGenerator::getBetweenZeroOne() * 10;
-  }
-
-  public function subscribeWeatherObserver(IWeatherObserver $observer): void
-  {
-    if (!in_array($observer, $this->observers, true)) {
-      $this->observers[] = $observer;
+      // On génère des nombres aléatoire pour simuler les capteurs
+        $this->temperature = RandomGenerator::getBetweenZeroOne() * 10;
+        $this->humidity = RandomGenerator::getBetweenZeroOne() * 10;
+        $this->pressure = RandomGenerator::getBetweenZeroOne() * 10;
     }
-  }
 
-  public function unsubscribeWeatherObserver(IWeatherObserver $observer): void
-  {
-    foreach($this->observers as $key => $subscribeObserver) {
-      if ($subscribeObserver === $observer) {
-        unset($this->observers[$key]);
-        break;
-      }
+    public function subscribeWeatherObserver(IWeatherObserver $observer): void
+    {
+        if (!in_array($observer, $this->observers, true)) {
+            $this->observers[] = $observer;
+        }
     }
-  }
 
-  public function notifyWeatherObserver(): void
-  {
-    foreach($this->observers as $observer) {
-      $observer->refreshWeatherSubject(
-        $this->getTemperature(),
-        $this->getHumidity(),
-        $this->getPressure()
-      );
+    public function unsubscribeWeatherObserver(IWeatherObserver $observer): void
+    {
+        foreach ($this->observers as $key => $subscribeObserver) {
+            if ($subscribeObserver === $observer) {
+                unset($this->observers[$key]);
+                break;
+            }
+        }
     }
-  }
 
-  public function getTemperature(): float
-  {
-    return $this->temperature;
-  }
+    public function notifyWeatherObserver(): void
+    {
+        foreach ($this->observers as $observer) {
+            $observer->refreshWeatherSubject(
+                $this->getTemperature(),
+                $this->getHumidity(),
+                $this->getPressure()
+            );
+        }
+    }
 
-  public function getHumidity(): float
-  {
-    return $this->humidity;
-  }
+    public function getTemperature(): float
+    {
+        return $this->temperature;
+    }
 
-  public function getPressure(): float
-  {
-    return $this->pressure;
-  }
+    public function getHumidity(): float
+    {
+        return $this->humidity;
+    }
 
-  public function updateMeasure(): void
-  {
-    $this->temperature = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
-      $this->temperature
-    );
-    $this->humidity = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
-      $this->humidity
-    );
-    $this->pressure = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
-      $this->pressure
-    );
+    public function getPressure(): float
+    {
+        return $this->pressure;
+    }
 
-    $this->notifyWeatherObserver();
-  }
+    public function updateMeasure(): void
+    {
+        $this->temperature = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
+            $this->temperature
+        );
+        $this->humidity = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
+            $this->humidity
+        );
+        $this->pressure = RandomGenerator::increaseOrDecreaseBetweenZeroOne(
+            $this->pressure
+        );
+
+        $this->notifyWeatherObserver();
+    }
 }

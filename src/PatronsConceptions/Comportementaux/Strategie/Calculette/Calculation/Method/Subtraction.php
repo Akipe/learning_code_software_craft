@@ -7,16 +7,16 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Strategie
 
 class Subtraction extends BaseMethod implements ICalculation
 {
-  public function calculTwoNumbers(float $x, float $y): float
-  {
-    $this->setX($x);
-    $this->setY($y);
+    public function calculTwoNumbers(float $x, float $y): float
+    {
+        $this->setX($x);
+        $this->setY($y);
 
-    return $x - $y;
-  }
+        return $x - $y;
+    }
 
-  public function getOperation(): string
-  {
-    return "{$this->getX()} - {$this->getY()}";
-  }
+    public function getOperation(): string
+    {
+        return "{$this->getX()} - {$this->getY()}";
+    }
 }

@@ -8,8 +8,8 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\
 
 interface IExportateurForme
 {
-  public function inspecterPoint(Point $point): void;
-  public function inspecterCercle(Cercle $cercle): void;
-  public function inspecterCarre(Carre $carre): void;
-  public function getExport(): string;
+    public function inspecterPoint(Point $point): void;
+    public function inspecterCercle(Cercle $cercle): void;
+    public function inspecterCarre(Carre $carre): void;
+    public function getExport(): string;
 }

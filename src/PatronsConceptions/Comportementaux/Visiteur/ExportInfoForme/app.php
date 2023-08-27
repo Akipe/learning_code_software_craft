@@ -6,7 +6,7 @@ use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeXML;
 use Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Visiteur\ExportInfoForme\Exportateur\ExportateurFormeJSON;
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $point1 = new Point(5, 6, "point 1");
 $point2 = new Point(12, 4, "point 2");
@@ -27,5 +27,5 @@ $jsonFormeExport->inspecterPoint($point1);
 $jsonFormeExport->inspecterCercle($cercle1);
 $jsonFormeExport->inspecterCarre($carre1);
 
-echo "Export en format XML :". PHP_EOL . $xmlFormeExport->getExport() . PHP_EOL;
-echo "Export en format JSON :". PHP_EOL . $jsonFormeExport->getExport() . PHP_EOL;
+echo "Export en format XML :" . PHP_EOL . $xmlFormeExport->getExport() . PHP_EOL;
+echo "Export en format JSON :" . PHP_EOL . $jsonFormeExport->getExport() . PHP_EOL;

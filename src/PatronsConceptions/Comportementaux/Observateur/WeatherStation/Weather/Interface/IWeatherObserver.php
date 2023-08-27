@@ -4,9 +4,9 @@ namespace Akipe\LearningCodeSoftwareCraft\PatronsConceptions\Comportementaux\Obs
 
 interface IWeatherObserver
 {
-  public function refreshWeatherSubject(
-    float $temperature,
-    float $humidity,
-    float $pression,
-  ): void;
+    public function refreshWeatherSubject(
+        float $temperature,
+        float $humidity,
+        float $pression,
+    ): void;
 }
