@@ -6,7 +6,8 @@ Ce dépôt me permet d'apprendre et de travaille sur ces différentes méthodes.
 
 Voici un ensemble de thème abordé dans ce dépôt :
 
-- Le développement piloté par les tests (appelé test driven development, TDD)
-- Les patrons de conceptions (appelé design pattern)
+- Le développement piloté par les tests (appelé *test-driven development* ou *TDD*)
+- Le développement piloté par le comportement (appelé *behaviour-driven development* ou *BDD*)
+- Les patrons de conceptions (appelé *design pattern*)
 
 Les entraînements sont basé sur des exemples de projets et des katas.
