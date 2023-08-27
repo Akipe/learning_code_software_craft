@@ -1,7 +1,7 @@
 <?php
 
-use Akipe\ExampleFizzBuzz\FizzBuzz;
 use PHPUnit\Framework\TestCase;
+use Akipe\LearningCodeSoftwareCraft\TDD\FizzBuzz\FizzBuzz;
 
 final class FizzBuzzTest extends TestCase
 {

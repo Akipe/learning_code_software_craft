@@ -1,6 +1,6 @@
 <?php
 
-namespace Akipe\ExampleFizzBuzz;
+namespace Akipe\LearningCodeSoftwareCraft\TDD\FizzBuzz;
 
 class FizzBuzz
 {

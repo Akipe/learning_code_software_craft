@@ -1,6 +1,0 @@
-# composer
-composer.phar
-/vendor/
-vendor/
-# phpunit
-*.cache
